@@ -1,5 +1,17 @@
-function setAlarm() {}
-
+function setAlarm() { }
+let timeRemaining = 0;
+function setAlarm() {
+  let inputBox document.getElementById("alarmSet");
+  let valueIn = inputBox.value;
+  inputBox.value = "";
+  if (valueIn) {
+    alert("Please set the time.");
+    inputBox.focus();
+    return;
+  } else if (valueIn / 3600 > 24) {
+    alert
+  }
+}
 // DO NOT EDIT BELOW HERE
 
 var audio = new Audio("alarmsound.mp3");
